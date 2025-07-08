@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="form" action="#">
+      <p>
+        <label for="firstName">First Name</label>
+        <input type="text" name="fname" id="fname" required />
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lname" id="lname" required />
+      </p>
+      <p>Select a race:</p>
+      <div>
+        <input type="radio" name="radios" id="firstRadio" required />
+        <label for="firstRadio">Fun Run 5k</label>
+
+        <input type="radio" name="radios" id="secondRadio" required />
+        <label for="secondRadio">Half Marathon</label>
+
+        <input type="radio" name="radios" id="thirdRadio" required />
+        <label for="thirdRadio">Full Marathon</label>
+      </div>
+      <p>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required />
+      </p>
+      <p>
+        <label for="age">Select Age Group</label>
+        <select name="age-group" class="selectInput" id="age-group">
+          <option value="chooseOption" disabled selected>
+            Please choose a option
+          </option>
+          <option value="1" required>Under 18</option>
+          <option value="2" required>18-30</option>
+          <option value="3" required>30-50</option>
+          <option value="4" required>50+</option>
+        </select>
+      </p>
+      <button type="submit" class="submitBtn">Submit</button>
+    </form>
+    <script>
+      const selectInput = document.querySelector(".selectInput");
+      const form = document.querySelector(".form");
+
+      form.addEventListener("submit", (event) => {
+        if (selectInput.value === "chooseOption") {
+          event.preventDefault();
+          alert("Please, select a Age group.");
+          selectInput.focus();
+        }
+      });
+    </script>
+  </body>
+</html>
