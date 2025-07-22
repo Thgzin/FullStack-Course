@@ -72,10 +72,21 @@ if (num <= 100) {
   }
 }
 */
-
+/*
 const mystery = "Pretty7"; //CHANGE THIS VALUE TO MAKE THE CONDITIONAL BELOW TRUE
 
 // LEAVE THIS CODE ALONE! (pretty please)
 if (mystery[0] === "P" && mystery.length > 5 && mystery.indexOf("7") !== -1) {
   console.log("YOU GOT IT!!!");
 }
+*/
+
+/*
+const lottoNumbers = [1, 2, 3, 4, 5, 6];
+*/
+
+const leaderboard = ["Harry", "Lua", "Hermione", "Bellatrix"]; //DON'T TOUCH THIS LINE!
+
+// YOUR CODE BELOW HERE:
+leaderboard[1] = "Luna";
+leaderboard[3] = "Draco";
