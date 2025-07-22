@@ -27,3 +27,11 @@ function isEven(num) {
   }
 }
 isEven(4);
+function isOdd(num) {
+  if (num % 2 === 1) {
+    console.log("Odd");
+  } else {
+    return;
+  }
+}
+isOdd(3);
