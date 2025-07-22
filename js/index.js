@@ -85,8 +85,18 @@ if (mystery[0] === "P" && mystery.length > 5 && mystery.indexOf("7") !== -1) {
 const lottoNumbers = [1, 2, 3, 4, 5, 6];
 */
 
+/*
 const leaderboard = ["Harry", "Lua", "Hermione", "Bellatrix"]; //DON'T TOUCH THIS LINE!
 
 // YOUR CODE BELOW HERE:
 leaderboard[1] = "Luna";
 leaderboard[3] = "Draco";
+*/
+
+const planets = ["The Moon", "Venus", "Earth", "Mars", "Jupiter"]; //DO NOT TOUCH THIS LINE!
+
+// YOUR CODE GOES BELOW THIS LINE:
+planets.shift();
+planets.push("Saturn");
+planets.unshift("Mercury");
+console.log(planets);
