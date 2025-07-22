@@ -19,6 +19,8 @@ const die2 = Math.floor(Math.random() * 6) + 1; //random number from 1-6
 const roll = `You rolled a ${die1} and a ${die2}. They sum to ${die1 + die2}`;
 console.log(roll);
 */
+
+/*
 function isEven(num) {
   if (num % 2 === 0) {
     console.log("Even");
@@ -35,3 +37,18 @@ function isOdd(num) {
   }
 }
 isOdd(3);
+*/
+
+function getColor(phrase) {
+  if (phrase === "stop") {
+    console.log("red");
+  } else if (phrase === "slow") {
+    console.log("yellow");
+  } else if (phrase === "go") {
+    console.log("green");
+  } else {
+    console.log("purple");
+  }
+}
+
+getColor("stop");
