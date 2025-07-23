@@ -113,7 +113,7 @@ const airplaneSeats = [
 airplaneSeats[3][1] = "Hugo";
 console.log(airplaneSeats);
 */
-
+/*
   const product = {
     name: "Gummy Bears",
     inStock: true,
@@ -121,3 +121,15 @@ console.log(airplaneSeats);
     flavors: ["grape", "apple", "cherry"],
   };
   console.log(product);
+*/
+
+const restaurant = {
+  name: "Ichiran Ramen",
+  address: `${Math.floor(Math.random() * 100) + 1} Johnson Ave`,
+  city: "Brooklyn",
+  state: "NY",
+  zipcode: "11206",
+};
+
+const fullAddress = `${restaurant.address}, ${restaurant.city}, ${restaurant.state} ${restaurant.zipcode}`;
+console.log(fullAddress);
