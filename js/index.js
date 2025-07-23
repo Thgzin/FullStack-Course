@@ -122,7 +122,7 @@ console.log(airplaneSeats);
   };
   console.log(product);
 */
-
+/*
 const restaurant = {
   name: "Ichiran Ramen",
   address: `${Math.floor(Math.random() * 100) + 1} Johnson Ave`,
@@ -133,3 +133,8 @@ const restaurant = {
 
 const fullAddress = `${restaurant.address}, ${restaurant.city}, ${restaurant.state} ${restaurant.zipcode}`;
 console.log(fullAddress);
+*/
+
+for (let i = 1; i <= 6; i++) {
+  console.log("Da ba dee da ba daa");
+}
