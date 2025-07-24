@@ -22,6 +22,7 @@ while (parseInt(guess) !== targetNum) {
     guess = prompt("Invalid guess! Please enter a number or 'q' to quit");
   }
 }
+
 if (guess === "q") {
   console.log("You quit the game!");
 } else {

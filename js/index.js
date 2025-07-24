@@ -145,7 +145,14 @@ for (let i = 25; i >= 0; i-=5) {
 }
 */
 
+/*
 const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"]; //DONT TOUCH THIS LINE!
 for (let i = 0; i < people.length; i++) {
   console.log(people[i].toUpperCase());
+}
+*/
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (let num of numbers) {
+  console.log(num * num);
 }
