@@ -151,8 +151,31 @@ for (let i = 0; i < people.length; i++) {
   console.log(people[i].toUpperCase());
 }
 */
+
+/*
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 for (let num of numbers) {
   console.log(num * num);
 }
+*/
+
+/*
+function rant(message) {
+  console.log(message.toUpperCase());
+  console.log(message.toUpperCase());
+  console.log(message.toUpperCase());
+}
+rant("I HATE BEETS");
+*/
+
+function isSnakeEyes(n1, n2) {
+  if (n1 === 1 && n2 === 1) {
+    console.log("Snake Eyes!");
+  } else {
+    console.log("Not Snake Eyes!");
+  }
+}
+
+isSnakeEyes(2, 3);
+isSnakeEyes(1, 1);
