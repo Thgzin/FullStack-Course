@@ -169,6 +169,7 @@ function rant(message) {
 rant("I HATE BEETS");
 */
 
+/*
 function isSnakeEyes(n1, n2) {
   if (n1 === 1 && n2 === 1) {
     console.log("Snake Eyes!");
@@ -179,3 +180,35 @@ function isSnakeEyes(n1, n2) {
 
 isSnakeEyes(2, 3);
 isSnakeEyes(1, 1);
+*/
+
+/*
+function multiply(n1, n2) {
+  return n1 * n2;
+}
+console.log(multiply(2, 3));
+*/
+
+/*
+function isShortsWeather(temp) {
+  if (temp >= 75) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isShortsWeather(80));
+console.log(isShortsWeather(48));
+console.log(isShortsWeather(75));
+*/
+
+function lastElement(el = []) {
+  if (el == "") {
+    return null;
+  } else {
+    const lastIndex = el[el.length - 1];
+    return lastIndex;
+  }
+}
+console.log(lastElement());
+console.log(lastElement([3, 5, 7]));
