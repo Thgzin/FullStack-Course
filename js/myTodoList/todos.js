@@ -25,7 +25,6 @@ while (p !== "quit") {
       console.log(`${newTodo} added to list`);
     } else {
       let deleteIndex = parseInt(prompt("Enter index of todo to delete"));
-
       while (
         isNaN(deleteIndex) ||
         deleteIndex < 0 ||
