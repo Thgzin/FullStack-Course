@@ -277,6 +277,7 @@ const square = function (x) {
 console.log(square(10));
 */
 
+/*
 const square = {
   area(side) {
     return Math.pow(side, 2);
@@ -288,3 +289,31 @@ const square = {
 
 console.log(square.area(10));
 console.log(square.perimeter(10));
+*/
+
+/*
+const hen = {
+  name: "Helen",
+  eggCount: 0,
+  layAnEgg() {
+    this.eggCount += 1;
+    return "EGG";
+  },
+};
+console.log(hen.name);
+console.log(hen.eggCount);
+console.log(hen.layAnEgg());
+console.log(hen.layAnEgg());
+console.log(hen.eggCount);
+
+*/
+
+//Square(n) Sum
+function squareSum(numbers) {
+  const total = numbers
+    .map((value) => Math.pow(value, 2))
+    .reduce((acc, val) => acc + val,0);
+  return total;
+}
+
+console.log(squareSum([1, 2, 2]));
