@@ -215,6 +215,7 @@ console.log(lastElement());
 console.log(lastElement([3, 5, 7]));
 */
 
+/*
 function capitalize(string) {
   let str = string;
   const firstLetter = str[0].toUpperCase();
@@ -222,3 +223,14 @@ function capitalize(string) {
   return `${firstLetter + str}`;
 }
 console.log(capitalize("eggplants"));
+*/
+
+function sumArray(array) {
+  let total = 0;
+  for (let i = 0; i < array.length; i++) {
+    total += array[i];
+  }
+  return total;
+}
+
+console.log(sumArray([1, 2, 3]));
