@@ -270,8 +270,21 @@ function returnDay(number) {
 console.log(returnDay(6));
 */
 
+/*
 const square = function (x) {
   return Math.pow(x, 2);
 };
+console.log(square(10));
+*/
 
-console.log(square(4));
+const square = {
+  area(side) {
+    return Math.pow(side, 2);
+  },
+  perimeter(side) {
+    return side * 4;
+  },
+};
+
+console.log(square.area(10));
+console.log(square.perimeter(10));
