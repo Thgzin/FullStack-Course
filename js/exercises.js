@@ -225,6 +225,7 @@ function capitalize(string) {
 console.log(capitalize("eggplants"));
 */
 
+/*
 function sumArray(array) {
   let total = 0;
   for (let i = 0; i < array.length; i++) {
@@ -234,3 +235,35 @@ function sumArray(array) {
 }
 
 console.log(sumArray([1, 2, 3]));
+*/
+
+function returnDay(number) {
+  const daysOfWeek = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+  if (number === 1) {
+    return daysOfWeek[0];
+  } else if (number === 2) {
+    return daysOfWeek[1];
+  } else if (number === 3) {
+    return daysOfWeek[2];
+  } else if (number === 4) {
+    return daysOfWeek[3];
+  } else if (number === 5) {
+    return daysOfWeek[4];
+  } else if (number === 6) {
+    return daysOfWeek[5];
+  } else if (number === 7) {
+    return daysOfWeek[6];
+  } else if (number <= 0 || number >= 8) {
+    return null;
+  }
+}
+
+console.log(returnDay(6));
