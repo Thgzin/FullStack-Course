@@ -237,6 +237,7 @@ function sumArray(array) {
 console.log(sumArray([1, 2, 3]));
 */
 
+/*
 function returnDay(number) {
   const daysOfWeek = [
     "Monday",
@@ -267,3 +268,10 @@ function returnDay(number) {
 }
 
 console.log(returnDay(6));
+*/
+
+const square = function (x) {
+  return Math.pow(x, 2);
+};
+
+console.log(square(4));
