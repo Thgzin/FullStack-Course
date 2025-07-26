@@ -202,6 +202,7 @@ console.log(isShortsWeather(48));
 console.log(isShortsWeather(75));
 */
 
+/*
 function lastElement(el = []) {
   if (el == "") {
     return null;
@@ -212,3 +213,12 @@ function lastElement(el = []) {
 }
 console.log(lastElement());
 console.log(lastElement([3, 5, 7]));
+*/
+
+function capitalize(string) {
+  let str = string;
+  const firstLetter = str[0].toUpperCase();
+  str = str.slice(0, 0) + str.slice(1);
+  return `${firstLetter + str}`;
+}
+console.log(capitalize("eggplants"));
