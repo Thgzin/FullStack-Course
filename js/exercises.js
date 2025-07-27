@@ -309,6 +309,7 @@ console.log(hen.eggCount);
 */
 
 //Square(n) Sum
+/*
 function squareSum(numbers) {
   const total = numbers
     .map((value) => Math.pow(value, 2))
@@ -317,3 +318,28 @@ function squareSum(numbers) {
 }
 
 console.log(squareSum([1, 2, 2]));
+*/
+
+/*
+function areYouPlayingBanjo(name) {
+  if (name[0] === "R" || name[0] === "r") {
+    return name + " plays banjo";
+  } else {
+    return name + " does not play banjo";
+  }
+}
+
+console.log(areYouPlayingBanjo("Adam"));
+*/
+
+/*
+function evenOrOdd(number) {
+  if (number % 2 === 0) {
+    return "Even";
+  } else {
+    return "Odd";
+  }
+}
+
+console.log(evenOrOdd(2));
+*/
