@@ -362,8 +362,29 @@ const firstNames = fullNames.map((e) => {
 console.log(firstNames);
 */
 
+/*
 const greet = (person) => {
   return `Hey ${person}!`;
 };
 
 console.log(greet("Hagrid"));
+*/
+
+/*
+const validUserNames = (usernames) => usernames.filter((e) => e.length < 10);
+
+console.log(
+  validUserNames([
+    "mark",
+    "staceysmom1978",
+    "q29832128238983",
+    "carrie98",
+    "MoanaFan",
+  ])
+);
+*/
+
+const allEvens = (evens) => evens.every((e) => e % 2 === 0);
+
+console.log(allEvens([2, 4, 6, 8]));
+console.log(allEvens([2, 1, 6, 8]));
