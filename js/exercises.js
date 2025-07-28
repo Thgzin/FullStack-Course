@@ -344,6 +344,7 @@ function evenOrOdd(number) {
 console.log(evenOrOdd(2));
 */
 
+/*
 const fullNames = [
   { first: "Albus", last: "Dumbledore" },
   { first: "Harry", last: "Potter" },
@@ -359,3 +360,10 @@ const firstNames = fullNames.map((e) => {
 });
 
 console.log(firstNames);
+*/
+
+const greet = (person) => {
+  return `Hey ${person}!`;
+};
+
+console.log(greet("Hagrid"));
