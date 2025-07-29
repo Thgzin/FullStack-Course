@@ -384,7 +384,30 @@ console.log(
 );
 */
 
+/*
 const allEvens = (evens) => evens.every((e) => e % 2 === 0);
 
 console.log(allEvens([2, 4, 6, 8]));
 console.log(allEvens([2, 1, 6, 8]));
+*/
+
+const movies = [
+  {
+    title: "Alien",
+    score: 90,
+    year: 1942,
+  },
+  {
+    title: "Cass",
+    score: 67,
+    year: 1999,
+  },
+];
+
+const [{ title }] = movies;
+console.log(title);
+
+const moviesMap = movies.map(({ title, score, year }) => {
+  return `${title} (${year})  ${score} `;
+});
+const mov = document.getElementById
