@@ -410,4 +410,3 @@ console.log(title);
 const moviesMap = movies.map(({ title, score, year }) => {
   return `${title} (${year})  ${score} `;
 });
-const mov = document.getElementById
