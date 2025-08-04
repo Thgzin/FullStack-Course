@@ -28,6 +28,10 @@ const handleReset = () => {
     p2display.textContent = 0;
     p1.disabled = false;
     p2.disabled = false;
+    p1display.classList.remove("victory");
+    p1display.classList.remove("loss");
+    p2display.classList.remove("loss");
+    p2display.classList.remove("victory");
   });
 };
 handleReset();
@@ -36,10 +40,14 @@ const checkVictory = () => {
   if (Number(p1display.textContent) === Number(playingTo.value)) {
     p1.disabled = true;
     p2.disabled = true;
+    p1display.classList.add("victory");
+    p2display.classList.add("loss");
   }
   if (Number(p2display.textContent) === Number(playingTo.value)) {
     p1.disabled = true;
     p2.disabled = true;
+    p2display.classList.add("victory");
+    p1display.classList.add("loss");
   }
 };
 
@@ -53,5 +61,4 @@ const playingToEvents = () => {
     p2.disabled = false;
   });
 };
-
 playingToEvents();
