@@ -10,7 +10,6 @@ const handleSum = () => {
     let p1Score = Number(p1display.textContent);
     p1Score++;
     p1display.textContent = p1Score;
-
     checkVictory();
   });
 
@@ -45,3 +44,10 @@ const checkVictory = () => {
 };
 
 playingTo.addEventListener("change", checkVictory);
+
+playingTo.addEventListener("change", () => {
+  p1display.textContent = 0;
+  p2display.textContent = 0;
+  p1.disabled = false;
+  p2.disabled = false;
+});
