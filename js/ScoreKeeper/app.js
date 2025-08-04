@@ -59,6 +59,10 @@ const playingToEvents = () => {
     p2display.textContent = 0;
     p1.disabled = false;
     p2.disabled = false;
+    p2display.classList.remove("victory");
+    p1display.classList.remove("loss");
+    p1display.classList.remove("victory");
+    p2display.classList.remove("loss");
   });
 };
 playingToEvents();
