@@ -43,11 +43,15 @@ const checkVictory = () => {
   }
 };
 
-playingTo.addEventListener("change", checkVictory);
+const playingToEvents = () => {
+  playingTo.addEventListener("change", checkVictory);
 
-playingTo.addEventListener("change", () => {
-  p1display.textContent = 0;
-  p2display.textContent = 0;
-  p1.disabled = false;
-  p2.disabled = false;
-});
+  playingTo.addEventListener("change", () => {
+    p1display.textContent = 0;
+    p2display.textContent = 0;
+    p1.disabled = false;
+    p2.disabled = false;
+  });
+};
+
+playingToEvents();
