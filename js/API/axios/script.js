@@ -20,13 +20,17 @@ const addNewJoke = async () => {
 };
 
 const getDadJoke = async () => {
-  const config = {
-    headers: {
-      Accept: "application/json",
-    },
-  };
-  const res = await axios.get("https://icanhazdadjoke.com/", config);
-  return res.data.joke;
+  try {
+    const config = {
+      headers: {
+        Accept: "application/json",
+      },
+    };
+    const res = await axios.get("https://icanhazdadjoke.com/", config);
+    return res.data.joke;
+  } catch (e) {
+    return "No jokes available. Try again later.";
+  }
 };
 getDadJoke();
 
