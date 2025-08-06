@@ -8,17 +8,6 @@
 };
 getFact();
 */
-
-const btnJoke = document.querySelector(".btnJoke");
-const joke = document.querySelector(".jokeSection");
-
-const addNewJoke = async () => {
-  const jokeText = await getDadJoke();
-  const newLI = document.createElement("LI");
-  newLI.append(jokeText);
-  joke.append(newLI);
-};
-
 const getDadJoke = async () => {
   try {
     const config = {
@@ -33,5 +22,15 @@ const getDadJoke = async () => {
   }
 };
 getDadJoke();
+
+const btnJoke = document.querySelector(".btnJoke");
+const joke = document.querySelector(".jokeSection");
+
+const addNewJoke = async () => {
+  const jokeText = await getDadJoke();
+  const newLI = document.createElement("LI");
+  newLI.append(jokeText);
+  joke.append(newLI);
+};
 
 btnJoke.addEventListener("click", addNewJoke);
