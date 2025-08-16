@@ -389,7 +389,7 @@ const allEvens = (evens) => evens.every((e) => e % 2 === 0);
 
 console.log(allEvens([2, 4, 6, 8]));
 console.log(allEvens([2, 1, 6, 8]));
-*/
+
 
 const movies = [
   {
@@ -410,3 +410,11 @@ console.log(title);
 const moviesMap = movies.map(({ title, score, year }) => {
   return `${title} (${year})  ${score} `;
 });
+
+
+*/
+
+const numbers = [1, 5, 10];
+
+const sum = numbers.reduce((acc, val) => acc + val);
+console.log(sum);
