@@ -19,8 +19,13 @@ app.get("/dogs", (req, res) => {
   res.send("Woof!");
 });
 
-app.get("/r/:subreddit", (req, res) => {
-  res.send("This is a subreddit");
+app.get("/r/:subreddit/", (req, res) => {
+  const { subreddit } = req.params;
+  res.send(`<h1>Browsing the ${subreddit} subreddit</h1>`);
+});
+app.get("/r/:subreddit/:postId", (req, res) => {
+  const { subreddit, postId } = req.params;
+  res.send(`<h1>Viewing Post Id: ${postId} on the ${subreddit} subreddit</h1>`);
 });
 
 app.get(/(.*)/, (req, res) => {
