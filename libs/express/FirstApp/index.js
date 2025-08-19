@@ -28,12 +28,20 @@ app.get("/r/:subreddit/:postId", (req, res) => {
   res.send(`<h1>Viewing Post Id: ${postId} on the ${subreddit} subreddit</h1>`);
 });
 
-app.get(/(.*)/, (req, res) => {
-  res.send("I don't know that path!");
+app.get("/search", (req, res) => {
+  const { q } = req.query;
+  if (!q) {
+    res.send(`<h1>Nothing found if nothing search!</h1>`);
+  }
+  res.send(`<h1>Search results for: ${q}</h1>`);
 });
 
 app.post("/cats", (req, res) => {
   res.send("POST request to /cats");
+});
+
+app.get(/(.*)/, (req, res) => {
+  res.send("I don't know that path!");
 });
 
 app.listen(port, () => {
