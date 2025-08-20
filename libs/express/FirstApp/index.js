@@ -16,12 +16,12 @@ app.get("/cats", (req, res) => {
 });
 
 app.get("/dogs", (req, res) => {
-  res.send("Woof!");
+  res.send("Woof!!!");
 });
 
 app.get("/r/:subreddit/", (req, res) => {
   const { subreddit } = req.params;
-  res.send(`<h1>Browsing the ${subreddit} subreddit</h1>`);
+  res.send(`<h1>Browsing the ${subreddit} subreddit!</h1>`);
 });
 app.get("/r/:subreddit/:postId", (req, res) => {
   const { subreddit, postId } = req.params;
