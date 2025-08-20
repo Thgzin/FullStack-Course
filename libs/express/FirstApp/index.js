@@ -16,7 +16,7 @@ app.get("/cats", (req, res) => {
 });
 
 app.get("/dogs", (req, res) => {
-  res.send("Woof!!!");
+  res.send("Woof!!");
 });
 
 app.get("/r/:subreddit/", (req, res) => {
